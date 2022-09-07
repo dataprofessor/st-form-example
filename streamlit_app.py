@@ -17,5 +17,4 @@ with st.form('my_form'):
   submitted = st.form_submit_button('Submit')
   if submitted:
       add_value = first_value + second_value
-
-st.write(add_value)
+      st.write(add_value)
