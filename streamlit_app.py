@@ -12,7 +12,7 @@ st.header('Revised code')
 
 with st.form('my_form'):
   first_value = st.number_input('Enter number:')
-  second_value = st.number_input('Enter second number')
+  second_value = st.number_input('Enter second number:')
 
   submitted = st.form_submit_button('Submit')
   if submitted:
