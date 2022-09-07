@@ -1,5 +1,21 @@
 import streamlit as st
 
-st.title('🎈 App Name')
+st.header('Original code')
 
-st.write('Hello world!')
+first_val = st.number_input(“Enter number:”)
+second_val = st.number_input(“Enter second number”)
+add_val = first_val + second_val
+st.write(add_val)
+
+
+st.header('Revised code')
+
+with st.form("my_form"):
+  first_val = st.number_input(“Enter number:”)
+  second_val = st.number_input(“Enter second number”)
+
+  submitted = st.form_submit_button("Submit")
+  if submitted:
+      add_val = first_val + second_val
+
+st.write(add_val)
